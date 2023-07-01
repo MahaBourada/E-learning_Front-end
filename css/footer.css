@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Concert+One&family=Open+Sans&display=swap');
+
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --DARK-COLOR: #0D2354;
+    --LIGHT-COLOR: #5572B5;
+    --BG-COLOR: #EAEAEA;
+    --GREY-COLOR: #7F8187;
+    --WHITE-COLOR: #FFF;
+    --TITLE-COLOR: #0C1A38;
+
+    /* Fonts */
+    --MAIN-FONT-FAMILY: 'Audiowide', sans-serif;
+    --SECONDARY-FONT-FAMILY: 'Concert One', sans-serif;
+    --BODY-FONT-FAMILY: 'Open Sans', sans-serif;
+    --XL-FONT: 2.5rem; /* Icons */
+    --BIG-FONT: 2.2rem;
+    --SMALL-FONT: 1rem;
+    --XS-FONT: 0.75rem;
+
+    /* Padding, margin */
+    --SMALL-PADDING: 0.5rem;
+    --MEDIUM-PADDING: 1rem;
+    --SMALL-MARGIN: 0.25rem;
+    --MEDIUM-MARGIN: 0.5rem;
+    --BIG-MARGIN:1rem;
+
+    /* Border */
+    --BORDER: 3px solid #0C1A38;
+}
+
+/* Utility */
+img { 
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+
+.nowrap { white-space: nowrap; }
+
+.bold { font-weight: bold; }
+
+a { text-decoration: none; }
+
+button {
+    border: none;
+    outline: none; 
+    background-color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Style */
+body {
+    min-height: 100vh;    
+    background-color: var(--BG-COLOR);
+    font-family: var(--BODY-FONT-FAMILY);
+    font-size: 1.5em;
+}
+
+/* Footer */
+.footer {
+    bottom: 0;
+    height: 115px;
+
+    background-color: var(--GREY-COLOR);
+    font-size: var(--XS-FONT);
+    color: var(--WHITE-COLOR);
+    padding: var(--MEDIUM-PADDING);
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover, .footer a:active {
+    text-decoration: underline;
+}

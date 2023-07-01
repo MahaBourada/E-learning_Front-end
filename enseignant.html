@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord Enseignant</title>
+    <!-- Style links -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/enseignant_css/enseignant.css">
+    
+    <link rel="shortcut icon" href="img/NTIC_logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body>
+    <header class="header">
+        <section class="profile">
+            <section class="pfp-infos"> <!-- Teacher's infos -->
+                <figure class="profile_picture"> <!-- Profile picture img -->
+                    <img src="img/profilepic.png" alt="Profile Picture" title="Enseignant" width="598" height="599">
+                </figure>
+
+                <div class="dropdown"> <!-- Non Prenom -->
+                    <button class="dropbtn">
+                        Nom Prenom
+                        <i class="material-symbols-outlined">arrow_drop_down</i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="profileEnseignant.html">Consulter votre profil</a>
+                        <a href="#">Tableau de bord</a>
+                        <a href="connexion.html">Déconnexion</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pfp-msgs nowrap"> <!-- Messages Personnels -->
+                <a href="#">
+                    <h2>Messages Personnels</h2>
+                    <i class="material-symbols-outlined">mail</i>
+                </a>
+            </section>
+        </section>
+
+        <section class="faculty">
+            <figure class="logo"> <!-- NTIC logo img -->
+                <img src="img/NTIC_logo.png" alt="NTIC_logo" title="Nouvelles Technologies de l'Information et de la Communication" width="428" height="423">
+            </figure>
+            <figcaption><h1 class="faculty_name">Nouvelles Technologies de l'Information et de la Communication</h1></figcaption>
+        </section>
+    </header>
+
+    <main class="main"> <!-- Mes modules -->
+        <section class="body_title nowrap" id="modules">
+            <h2 id="js">
+                <i class="material-symbols-outlined icons">menu_book</i>Mes modules
+            </h2>
+        </section>
+
+        <section class="card">
+        <!-- Développement Avancé d'Applications Web -->
+            <a href="daaw.html">
+                <article class="subject" id="daaw">
+                    <i class="material-symbols-outlined icons">folder_open</i>
+                    <h2>Développement Avancé <br> d'Applications Web</h2>
+                </article>
+            </a>
+                
+        <!-- Introduction au système d'exploitation 1 -->
+            <a href="se.html">
+                <article class="subject" id="se">
+                    <i class="material-symbols-outlined icons">folder_open</i>
+                    <h2>Introduction au système <br> d'exploitation 1</h2>
+                </article>
+            </a>
+
+        <!-- Programmation C -->
+            <a href="programmation.html">
+                <article class="subject" id="cprg">
+                    <i class="material-symbols-outlined icons">folder_open</i>
+                    <h2>Programmation C<br>&nbsp;<br></h2>
+                </article>
+            </a> 
+        </section>
+    </main> 
+
+    <aside class="aside" id="aside"> <!-- Liste des étudiants -->
+        <section class="list_title body_title nowrap">
+            <h2>
+                <i class="material-symbols-outlined groups">groups</i>Liste des étudiants
+            </h2>
+            <div> <!-- Filter et supprimer les étudiants -->
+                <button id="filter">
+                    <i class="material-symbols-outlined util">filter_alt</i>
+                </button>
+                <button id="delete">
+                    <i class="material-symbols-outlined util">person_remove</i>
+                </button>
+            </div>
+        </section>
+
+        <section class="scroller"> 
+            <ul class="list">
+                <li class="name"><span>Emma Johnson</span>
+                    <b class="class">
+                        <span class="section">GL</span> 
+                        <span class="group">G1</span>
+                    </b>
+                </li>
+                <li class="name"><span>Benjamin Smith</span>
+                    <b class="class">
+                        <span class="section">SI</span> 
+                        <span class="group">G1</span>
+                    </b>
+                </li>
+                <li class="name"><span>Olivia Davis</span>
+                    <b class="class">
+                        <span class="section">TI</span> 
+                        <span class="group">G1</span>
+                    </b>
+                </li>
+                <li class="name"><span>Liam Thompson</span>
+                    <b class="class">
+                        <span class="section">SCI</span> 
+                        <span class="group">G1</span>
+                    </b>
+                </li>
+                <li class="name"><span>Ava Martinez</span>
+                    <b class="class">
+                        <span class="section">GL</span> 
+                        <span class="group">G3</span>
+                    </b>
+                </li>
+                <li class="name"><span>Noah Wilson</span>
+                    <b class="class">
+                        <span class="section">SI</span> 
+                        <span class="group">G2</span>
+                    </b>
+                </li>
+                <li class="name"><span>Sophia Lee</span>
+                    <b class="class">
+                        <span class="section">SCI</span> 
+                        <span class="group">G2</span>
+                    </b>
+                </li>
+                <li class="name"><span>William Anderson</span>
+                    <b class="class">
+                        <span class="section">GL</span> 
+                        <span class="group">G2</span>
+                    </b>
+                </li>
+                <li class="name"><span>Isabella Rodriguez</span>
+                    <b class="class">
+                        <span class="section">GL</span> 
+                        <span class="group">G1</span>
+                    </b>
+                </li>
+                <li class="name"><span>James Clark</span>
+                    <b class="class">
+                        <span class="section">TI</span> 
+                        <span class="group">G1</span>
+                    </b>
+                </li>
+                <li class="name"><span>Mia Taylor</span>
+                    <b class="class">
+                        <span class="section">SI</span> 
+                        <span class="group">G1</span>
+                    </b>
+                </li>
+                <li class="name"><span>Oliver Hernandez</span>
+                    <b class="class">
+                        <span class="section">GL</span> 
+                        <span class="group">G1</span>
+                    </b>
+                </li>
+                <li class="name"><span>Charlotte Walker</span>
+                    <b class="class">
+                        <span class="section">SCI</span> 
+                        <span class="group">G1</span>
+                    </b>
+                </li>
+                <li class="name"><span>Elijah Green</span>
+                    <b class="class">
+                        <span class="section">TI</span> 
+                        <span class="group">G1</span>
+                    </b>
+                </li>
+                <li class="name"><span>Amelia Martinez</span>
+                    <b class="class">
+                        <span class="section">SCI</span> 
+                        <span class="group">G1</span>
+                    </b>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <footer class="footer">
+        <nav>
+            <!-- Copyright -->
+            <p class="info"><span class="bold">Copyright &copy; </span>Université Abdelhamid Mehri - Constantine 2.</p> 
+
+            <!-- Address -->
+            <p class="info"><span class="bold">Adresse: </span>Nouvelle ville Ali Mendjeli BP : 67A, Constantine &#8208; Algérie La Nouvelle Ville Ali Mendjeli, 25016</p> 
+
+            <!-- Email -->
+            <p class="infos"><span class="bold">Email: </span><a href="mailto:elearning-ntic@univ-constantine2.dz">elearning-ntic@univ-constantine2.dz</a></p> 
+
+            <!-- Phone number -->
+            <p class="infos"><span class="bold">Tel: </span><a href="tel:+03112345678">031 12 34 56 78</a></p> 
+
+            <!-- Admins -->
+            <p class="infos"><span class="bold">Admins: </span>Bourada Maha Marwa, Boukerzaza Ibtihel, Naanaa Aya</p> 
+        </nav>
+    </footer>
+
+    <script src="js/enseignant_js/studentsHandling.js"></script>
+</body>
+</html>

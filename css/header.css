@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Concert+One&family=Open+Sans&display=swap');
+
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --DARK-COLOR: #0D2354;
+    --LIGHT-COLOR: #5572B5;
+    --BG-COLOR: #EAEAEA;
+    --GREY-COLOR: #7F8187;
+    --WHITE-COLOR: #FFF;
+    --TITLE-COLOR: #0C1A38;
+
+    /* Fonts */
+    --MAIN-FONT-FAMILY: 'Audiowide', sans-serif;
+    --SECONDARY-FONT-FAMILY: 'Concert One', sans-serif;
+    --BODY-FONT-FAMILY: 'Open Sans', sans-serif;
+    --XL-FONT: 2.5rem; /* Icons */
+    --BIG-FONT: 2.2rem;
+    --SMALL-FONT: 1rem;
+    --XS-FONT: 0.75rem;
+
+    /* Padding, margin */
+    --SMALL-PADDING: 0.5rem;
+    --MEDIUM-PADDING: 1rem;
+    --SMALL-MARGIN: 0.25rem;
+    --MEDIUM-MARGIN: 0.5rem;
+    --BIG-MARGIN:1rem;
+
+    /* Border */
+    --BORDER: 3px solid #0C1A38;
+}
+
+/* Utility */
+img { 
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+
+.nowrap { white-space: nowrap; }
+
+.bold { font-weight: bold; }
+
+a { text-decoration: none; }
+
+button {
+    border: none;
+    outline: none; 
+    background-color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Style */
+body {
+    min-height: 100vh;    
+    background-color: var(--BG-COLOR);
+    font-family: var(--BODY-FONT-FAMILY);
+    font-size: 1.5em;
+}
+
+/* Header */
+.dropdown { /* The dropdown button (menu) */
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {   /* Dropdown button */
+    padding: 10px 5px;
+}
+
+.dropdown-content { /* Dropdown content */
+    display: none;
+    position: absolute;
+    background-color: var(--BG-COLOR);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.dropdown-content a { /* Links inside the dropdown */
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #cccccc7e;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content { /* Show the dropdown menu on hover */
+    display: block;
+}
+
+.profile {
+    background-color: var(--LIGHT-COLOR);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+}
+
+.pfp-infos, .dropbtn h2, .dropbtn { /* Nom Prenom */
+    display: flex;
+    align-items: center;
+
+    color: var(--WHITE-COLOR);
+    font-weight: 300;
+    font-size: var(--SMALL-FONT);
+    margin: 0 var(--SMALL-MARGIN);
+}
+
+.pfp-infos:hover, .dropbtn h2:hover, .dropbtn:hover {
+    color: #EAEAEA;
+}
+
+.pfp-msgs a, .pfp-msgs h2 { /* Messages personnels */
+    display: flex;
+    align-items: center;
+
+    color: var(--WHITE-COLOR);
+    font-weight: 300;
+    font-size: var(--SMALL-FONT);
+    padding: 10px 5px;
+    margin: 0 var(--SMALL-MARGIN);
+}
+
+.pfp-msgs a:hover, .pfp-msgs h2:hover {
+    color: #EAEAEA;
+}
+
+.profile_picture {
+    width: 5%;
+    min-width: min(100%, 35px);
+}
+
+.profile_picture img {
+    width: 100%;
+    height: auto;
+}
+
+.faculty {
+    background-color: var(--DARK-COLOR);
+    padding: var(--SMALL-PADDING);
+    display: flex;
+    align-items: center;
+
+    height: 125px;
+}
+
+.faculty_name {
+    font-family: var(--MAIN-FONT-FAMILY);
+    font-size: var(--BIG-FONT);
+    font-weight: 100;
+    color: var(--WHITE-COLOR);
+    margin: var(--BIG-MARGIN);
+}
+
+.logo {
+    width: 5%;
+    min-width: 100px;
+    margin: var(--SMALL-MARGIN);
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}

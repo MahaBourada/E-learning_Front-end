@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Concert+One&family=Open+Sans&display=swap');
+
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --DARK-COLOR: #0D2354;
+    --LIGHT-COLOR: #5572B5;
+    --BG-COLOR: #EAEAEA;
+    --GREY-COLOR: #7F8187;
+    --WHITE-COLOR: #FFF;
+    --TITLE-COLOR: #0C1A38;
+
+    /* Fonts */
+    --MAIN-FONT-FAMILY: 'Audiowide', sans-serif;
+    --SECONDARY-FONT-FAMILY: 'Concert One', sans-serif;
+    --BODY-FONT-FAMILY: 'Open Sans', sans-serif;
+    --XL-FONT: 2.5rem; /* Icons */
+    --BIG-FONT: 2.2rem;
+    --MEDIUM-FONT: 1.75rem;
+    --SMALL-FONT: 1rem;
+    --XS-FONT: 0.75rem;
+
+    /* Padding, margin */
+    --SMALL-PADDING: 0.5rem;
+    --MEDIUM-PADDING: 1rem;
+    --SMALL-MARGIN: 0.25rem;
+    --MEDIUM-MARGIN: 0.5rem;
+    --BIG-MARGIN: 1rem;
+
+    /* Border */
+    --BORDER: 3px solid #0C1A38;
+}
+
+/* Utility */
+img { 
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+
+.nowrap { white-space: nowrap; }
+
+.bold { font-weight: bold; }
+
+a { text-decoration: none; }
+
+button {
+    border: none;
+    outline: none; 
+    background-color: inherit;
+    cursor: pointer;
+}
+
+/* Style */
+body {
+    min-height: 100vh;
+    
+    position: relative;
+    background-color: var(--BG-COLOR);
+    font-family: var(--BODY-FONT-FAMILY);
+    font-size: 1.5em;
+}
+
+.header { /* Header */
+    grid-area: hd;
+}
+
+.main { /* Main */
+    grid-area: mn;
+}
+
+.footer { /* Footer */
+    grid-area: ft;
+}
+
+/* Header */
+.faculty {
+    background-color: var(--DARK-COLOR);
+    padding: var(--SMALL-PADDING);
+    display: flex;
+    align-items: center;
+}
+
+.faculty_name {
+    font-family: var(--MAIN-FONT-FAMILY);
+    font-size: var(--BIG-FONT);
+    font-weight: 100;
+    color: var(--WHITE-COLOR);
+    margin: var(--BIG-MARGIN);
+}
+
+.logo {
+    width: 5%;
+    min-width: 100px;
+    margin: var(--SMALL-MARGIN);
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+} 
+
+form {
+    min-width: 50vh;
+    max-width: 50vh;
+    margin: 4rem auto;
+}
+
+fieldset {
+    border: transparent;
+    border-radius: 50px;
+    padding: 2rem;
+    color: hsl(222, 20%, 17%);
+    box-shadow: 6px 6px 6px hsl(222, 15%, 52%), -6px -6px 4px hsl(222, 10%, 90%);
+}
+
+fieldset h2 {
+    font-family: var(--SECONDARY-FONT-FAMILY);
+    font-size: 2.75rem;
+    text-align: center;
+    color: var(--TITLE-COLOR);
+}
+
+form label {
+    font-family: var(--BODY-FONT-FAMILY);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+form input[type = "text"], form input[type = "password"] {
+    width: 97%;
+    height: 3rem;
+    margin: var(--MEDIUM-MARGIN) 0.4rem;
+    padding: 1.25rem;
+
+    font-size: var(--SMALL-FONT);
+    color: hsl(222, 20%, 17%);
+    border: transparent;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px hsl(222, 15%, 81%), inset -6px -6px 6px hsl(222, 0%, 100%);
+}
+
+form input[type = "text"]:focus, form input[type = "password"]:focus {
+    outline: none;
+}
+
+form button {
+    width: fit-content;
+    height: 3rem;
+    display: block;
+    margin: 1.25rem auto 0 auto;
+    padding: 0 var(--MEDIUM-PADDING);
+
+    background-color: var(--LIGHT-COLOR);
+    color: aliceblue;
+    font-family: var(--SECONDARY-FONT-FAMILY);
+    font-size: 1.5rem;
+    border: transparent;
+    box-shadow: 2px 2px 6px #0C1A38;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: hsl(222, 39%, 45%);
+}
+
+form button:active {
+    transform: translate(2px, 2px);
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    background-color: var(--GREY-COLOR);
+    font-size: var(--XS-FONT);
+    color: var(--WHITE-COLOR);
+    padding: var(--MEDIUM-PADDING);
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover, .footer a:active {
+    text-decoration: underline;
+}
