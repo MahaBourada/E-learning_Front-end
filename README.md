@@ -1,4 +1,4 @@
-# E-learning_Front-end
+# E-learning Front-end
 Front-end of an e-learning website (teacher side). 
 
 # Preview
